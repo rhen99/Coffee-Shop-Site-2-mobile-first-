@@ -117,7 +117,7 @@ a {
   }
   &__image {
     &__div {
-      padding: 1rem 0;
+      padding: 3rem 0;
       margin: 0 2rem;
     }
     &__link {
@@ -126,6 +126,7 @@ a {
       height: 290px;
       margin: auto;
       border-radius: 5px;
+      box-shadow: 3px 3px 20px #444444;
       &--first {
         background: url("../img/food-plate-chocolate-dessert-132694.jpg")
           no-repeat center center / cover;
@@ -144,13 +145,39 @@ a {
     }
     &__p {
       margin: 0.5rem 0;
+      line-height: 1.4;
     }
     &__a {
       display: inline-block;
       font-weight: 700;
       padding: 1rem;
       color: #333;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #00704a;
+        bottom: 20%;
+        left: 0;
+        transition: width 300ms;
+      }
+      &:hover {
+        color: #00704a;
+        &::after {
+          width: 100%;
+        }
+      }
     }
+  }
+}
+.gallery {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 150px);
+    min-height: 100vh;
   }
 }
 
