@@ -278,6 +278,36 @@ a {
     color: #fff;
   }
 }
+.footer {
+  &__links {
+    text-align: center;
+    &__div {
+      padding: 0.6rem;
+    }
+    &__h3 {
+      font-size: 1rem;
+      color: #333;
+      font-weight: 600;
+    }
+    &__h2 {
+      font-weight: 600;
+    }
+    &__a {
+      font-size: 1.3rem;
+      color: #333;
+      font-weight: 600;
+      &:hover {
+        color: #00704a;
+      }
+    }
+    &__socialmedia {
+      display: inline-block;
+      margin: 0.5rem;
+      color: #333;
+      font-size: 1.4rem;
+    }
+  }
+}
 
 .device--desktop {
   display: none;
