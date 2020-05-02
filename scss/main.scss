@@ -173,11 +173,109 @@ a {
   }
 }
 .gallery {
+  padding: 2rem 0;
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 150px);
+    grid-template-rows: repeat(6, 150px);
+    grid-template-areas:
+      "intro intro"
+      "bigImg bigImg"
+      "bigImg bigImg"
+      "img1 img2"
+      "img3 img4"
+      "img5 img6";
+    gap: 0.7rem;
     min-height: 100vh;
+    &__tile {
+      border-radius: 5px;
+      &--1 {
+        grid-area: intro;
+      }
+      &--2 {
+        grid-area: bigImg;
+        background: url("../img/beverage-brown-caffeine-cappuccino-585753.jpg")
+          no-repeat center center / cover;
+      }
+      &--3 {
+        background: url("../img/cappuccino-and-a-croissant-890429.jpg")
+          no-repeat center center / cover;
+        grid-area: img1;
+      }
+      &--4 {
+        background: url("../img/shallow-focus-photography-of-cafe-late-982612.jpg")
+          no-repeat center center / cover;
+        grid-area: img2;
+      }
+      &--5 {
+        background: url("../img/cheese-cake-with-strawberry-fruit-1098592.jpg")
+          no-repeat center center / cover;
+        grid-area: img3;
+      }
+      &--6 {
+        grid-area: img4;
+        background: url("../img/chocolate-with-milted-chocolate-on-white-ceramic-plate-45202.jpg")
+          no-repeat center center / cover;
+      }
+      &--7 {
+        grid-area: img5;
+        background: url("../img/photo-of-cake-2928378.jpg") no-repeat center
+          center / cover;
+      }
+      &--8 {
+        grid-area: img6;
+        background: url("../img/beverage-breakfast-brownies-cafe-448471.jpg")
+          center center / cover;
+      }
+    }
+  }
+  &__intro {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    &__h1 {
+      font-size: 1.7rem;
+    }
+    &__p {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    &__a {
+      color: #333;
+      font-size: 1.3rem;
+      font-weight: 700;
+      &:hover {
+        color: #00704a;
+      }
+    }
+  }
+}
+.footer {
+}
+.newsletter {
+  padding: 1rem 0;
+  text-align: center;
+  &__text {
+    margin: 1rem 0;
+
+    line-height: 1.4;
+  }
+  &__input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    border: 0;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #333;
+  }
+  &__send {
+    display: inline-block;
+    margin: 0.5rem 0;
+    border: 0;
+    padding: 0.5rem 1rem;
+    background-color: #00704a;
+    color: #fff;
   }
 }
 
