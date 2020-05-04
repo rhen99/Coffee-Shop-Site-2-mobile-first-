@@ -60,7 +60,7 @@
         </ul>
       </div>
     </header>
-    <section class="showcase">
+    <section class="showcase" id="showcase">
       <div class="showcase__inner">
         <h1 class="showcase__inner__h1">
           Have A Great Day Ahead
@@ -68,12 +68,12 @@
         <p class="showcase__inner__p">
           Morning Coffee
         </p>
-        <a href="#" class="showcase__inner__a"
+        <a href="#about" class="showcase__inner__a smooth__scroll"
           ><i class="fas fa-angle-down"></i> Read More</a
         >
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__images">
           <figure class="about__images__track">
@@ -132,6 +132,11 @@
         </div>
       </div>
     </section>
+    <a
+      href="#showcase"
+      class="floating__button floating__button--hide smooth__scroll back__to__top"
+      ><i class="fas fa-angle-up fa-2x"></i
+    ></a>
     <footer class="footer">
       <div class="container">
         <div class="newsletter">
@@ -221,5 +226,10 @@
       src="https://kit.fontawesome.com/f43319387c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

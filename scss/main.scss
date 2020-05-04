@@ -35,6 +35,9 @@ a {
     top: 28%;
     font-size: 1.3rem;
     color: #333;
+    &:hover {
+      color: #00704a;
+    }
   }
   &__list {
     overflow: hidden;
@@ -250,8 +253,6 @@ a {
       }
     }
   }
-}
-.footer {
 }
 .newsletter {
   padding: 1rem 0;
