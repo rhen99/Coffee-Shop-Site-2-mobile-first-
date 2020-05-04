@@ -313,4 +313,59 @@ a {
 .device--desktop {
   display: none;
 }
+@media (min-width: 768px) {
+  .showcase {
+    height: 60vh;
+    &__inner {
+      &__h1 {
+        font-size: 2.3rem;
+      }
+      &__p {
+        font-size: 1.5rem;
+        padding: 0.7rem 0;
+      }
+      &__a {
+        font-size: 1.4rem;
+        padding: 0.7rem 1.4rem;
+      }
+    }
+  }
+  .about {
+    padding: 3rem 0;
+    &__container {
+      display: flex;
+    }
+    &__images {
+      flex: 1;
+      margin-right: 1rem;
+      &__track {
+        width: 100%;
+      }
+    }
+    &__image {
+      &__div {
+        padding: 0;
+        margin: 0 1rem;
+      }
+      &__link {
+        box-shadow: 3px 3px 10px #444;
+        width: 200px;
+        height: 390px;
+      }
+    }
+
+    &__text {
+      flex: 1;
+      text-align: start;
+      align-self: center;
+    }
+  }
+  .gallery {
+    &__grid {
+      grid-template-rows: 150px 300px 300px 300px 300px 300px;
+    }
+    &__intro {
+    }
+  }
+}
 @import "utility";
