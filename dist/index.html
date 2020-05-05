@@ -15,11 +15,11 @@
       <div class="navbar__container container">
         <div class="navbar__logo">
           <h1 class="navbar__logo__h1">Morning</h1>
-          <a href="#" class="navbar__mobile__btn">
+          <a href="#" class="navbar__mobile__btn device--mobile">
             <i class="fas fa-bars"></i>
           </a>
         </div>
-        <ul class="navbar__list .navbar__list--left">
+        <ul class="navbar__list navbar__list--left">
           <li class="navbar__item">
             <a href="#" class="navbar__link">Shop</a>
           </li>
@@ -30,7 +30,7 @@
             <a href="#" class="navbar__link">Locations</a>
           </li>
         </ul>
-        <ul class="navbar__list .navbar__list--right">
+        <ul class="navbar__list navbar__list--right">
           <li class="navbar__item">
             <a href="#" class="navbar__link">About Us</a>
           </li>
@@ -60,6 +60,40 @@
         </ul>
       </div>
     </header>
+    <div class="search__box__outer">
+      <div class="search__box">
+        <div class="search__box__inner">
+          <a href="#" class="search__box__close"
+            ><i class="fas fa-times"></i
+          ></a>
+          <h4 class="search__box__quickmenu__title">Quick Menu</h4>
+          <ul class="search__box__quickmenu">
+            <li class="search__box__quickmenu__item">
+              <a class="search__box__quickmenu__link" href="#">Shop</a>
+            </li>
+            <li class="search__box__quickmenu__item">
+              <a class="search__box__quickmenu__link" href="#">Menus</a>
+            </li>
+            <li class="search__box__quickmenu__item">
+              <a class="search__box__quickmenu__link" href="#">About Us</a>
+            </li>
+            <li class="search__box__quickmenu__item">
+              <a class="search__box__quickmenu__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form action="#" class="search__box__form">
+            <input
+              type="text"
+              placeholder="Enter Search Term..."
+              class="search__box__input"
+            />
+            <button type="submit" class="search__box__btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="showcase" id="showcase">
       <div class="showcase__inner">
         <h1 class="showcase__inner__h1">
@@ -108,27 +142,48 @@
               ><i class="fab fa-instagram"></i> Follow</a
             >
           </div>
-          <div
-            class="gallery__grid__image gallery__grid__tile gallery__grid__tile--2"
-          ></div>
-          <div
-            class="gallery__grid__image gallery__grid__tile gallery__grid__tile--3"
-          ></div>
-          <div
-            class="gallery__grid__image gallery__grid__tile gallery__grid__tile--4"
-          ></div>
-          <div
-            class="gallery__grid__image gallery__grid__tile gallery__grid__tile--5"
-          ></div>
-          <div
-            class="gallery__grid__image gallery__grid__tile gallery__grid__tile--6"
-          ></div>
-          <div
-            class="gallery__grid__image gallery__grid__tile gallery__grid__tile--7"
-          ></div>
-          <div
-            class="gallery__grid__image gallery__grid__tile gallery__grid__tile--8"
-          ></div>
+          <div class="gallery__grid__tile gallery__grid__tile--2">
+            <img
+              src="img/beverage-brown-caffeine-cappuccino-585753.jpg"
+              class="gallery__grid__image"
+            />
+          </div>
+          <div class="gallery__grid__tile gallery__grid__tile--3">
+            <img
+              src="img/beverage-breakfast-brownies-cafe-448471.jpg"
+              class="gallery__grid__image"
+            />
+          </div>
+          <div class="gallery__grid__tile gallery__grid__tile--4">
+            <img
+              src="img/cheese-cake-with-strawberry-fruit-1098592.jpg"
+              class="gallery__grid__image"
+            />
+          </div>
+          <div class="gallery__grid__tile gallery__grid__tile--5">
+            <img
+              src="img/chocolate-with-milted-chocolate-on-white-ceramic-plate-45202.jpg"
+              class="gallery__grid__image"
+            />
+          </div>
+          <div class="gallery__grid__tile gallery__grid__tile--6">
+            <img
+              src="img/photo-of-cake-2928378.jpg"
+              class="gallery__grid__image"
+            />
+          </div>
+          <div class="gallery__grid__tile gallery__grid__tile--7">
+            <img
+              src="img/shallow-focus-photography-of-cafe-late-982612.jpg"
+              class="gallery__grid__image"
+            />
+          </div>
+          <div class="gallery__grid__tile gallery__grid__tile--8">
+            <img
+              src="img/cappuccino-and-a-croissant-890429.jpg"
+              class="gallery__grid__image"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -153,49 +208,47 @@
             <button type="submit" class="newsletter__send">Subscribe</button>
           </form>
         </div>
-      </div>
-      <div class="footer__menu">
-        <div class="container">
+        <div class="footer__menu">
           <div class="footer__menu__lists device--desktop">
-            <ul class="menu__list">
-              <li class="menu__list__item">
-                <a href="#" class="menu__list__link"
-                  ><h4 class="menu__list__link__h4">Shop</h4></a
-                >
-              </li>
-            </ul>
-            <ul class="menu__list">
-              <li class="menu__list__item">
-                <a href="#" class="menu__list__link"
-                  ><h4 class="menu__list__link__h4">Menus</h4></a
-                >
-              </li>
-            </ul>
-            <ul class="menu__list">
-              <li class="menu__list__item">
-                <a href="#" class="menu__list__link">
-                  <h4 class="menu__list__link__h4">Locations</h4>
+            <ul class="footer__menu__list">
+              <li class="footer__menu__list__item">
+                <a href="#" class="footer__menu__list__link">
+                  <h4 class="footer__menu__list__link__h4">Shop</h4>
                 </a>
               </li>
             </ul>
-            <ul class="menu__list">
-              <li class="menu__list__item">
-                <a href="#" class="menu__list__link">
-                  <h4 class="menu__list__link__h4">About Us</h4>
+            <ul class="footer__menu__list">
+              <li class="footer__menu__list__item">
+                <a href="#" class="footer__menu__list__link">
+                  <h4 class="footer__menu__list__link__h4">Menus</h4>
                 </a>
               </li>
             </ul>
-            <ul class="menu__list">
-              <li class="menu__list__item">
-                <a href="#" class="menu__list__link">
-                  <h4 class="menu__list__link__h4">Our Company</h4>
+            <ul class="footer__menu__list">
+              <li class="footer__menu__list__item">
+                <a href="#" class="footer__menu__list__link">
+                  <h4 class="footer__menu__list__link__h4">Locations</h4>
                 </a>
               </li>
             </ul>
-            <ul class="menu__list">
-              <li class="menu__list__item">
-                <a href="#" class="menu__list__link">
-                  <h4 class="menu__list__link__h4">Contact Us</h4>
+            <ul class="footer__menu__list">
+              <li class="footer__menu__list__item">
+                <a href="#" class="footer__menu__list__link">
+                  <h4 class="footer__menu__list__link__h4">About Us</h4>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__menu__list">
+              <li class="footer__menu__list__item">
+                <a href="#" class="footer__menu__list__link">
+                  <h4 class="footer__menu__list__link__h4">Our Company</h4>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__menu__list">
+              <li class="footer__menu__list__item">
+                <a href="#" class="footer__menu__list__link">
+                  <h4 class="footer__menu__list__link__h4">Contact Us</h4>
                 </a>
               </li>
             </ul>
@@ -222,6 +275,8 @@
         </div>
       </div>
     </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script
       src="https://kit.fontawesome.com/f43319387c.js"
       crossorigin="anonymous"

@@ -3,6 +3,7 @@ const mobileMenuBtn = document.querySelector(".navbar__mobile__btn");
 const smoothScrollBtns = document.querySelectorAll(".smooth__scroll");
 const backToTopBtn = document.querySelector(".back__to__top");
 let navListOpen = false;
+let searchBtn = false;
 //See if on mobile device if it is then use Draggable on the imageTrack
 function checkIfMobile() {
   if (!matchMedia("(min-width: 768px)").matches) {
@@ -59,7 +60,9 @@ function showBTTButton() {
     backToTopBtn.classList.add("floating__button--hide");
   }
 }
+
 window.addEventListener("load", checkIfMobile);
+document.body.addEventListener("load", checkIfMobile);
 mobileMenuBtn.addEventListener("click", toggleMobileMenu);
 smoothScrollBtns.forEach((scrollBtn) => {
   scrollBtn.addEventListener("click", triggerSmoothScroll);
